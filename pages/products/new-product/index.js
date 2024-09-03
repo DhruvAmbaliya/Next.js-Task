@@ -36,7 +36,6 @@ const newProduct = () => {
       Qty: enteredQuantity,
       Category: enteredCategory,
     };
-    //console.log(productEntered);
     const res = await axios.post("/api/products", productEntered, {
       headers: { "Content-Type": "application/json" },
     });

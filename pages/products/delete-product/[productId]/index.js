@@ -12,7 +12,7 @@ const DeleteProduct = () => {
       await axios.delete(`/api/products/${productId}`);
       router.push("/products");
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
 

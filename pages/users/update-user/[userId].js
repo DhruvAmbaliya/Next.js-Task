@@ -36,9 +36,8 @@ const UpdateUser = () => {
         const res = await axios.get(`/api/users/${userId}`);
         const userData = res.data;
         setUser(userData);
-        console.log(user);
       } catch (error) {
-        console.log(error);
+        console.error(error);
       }
     };
 
@@ -72,9 +71,6 @@ const UpdateUser = () => {
       gender: enteredGender,
       image: enteredImage,
     };
-
-    //console.log(productId);
-    // console.log(updatedProduct);
 
     const res = await axios.put(`/api/users/${userId}`, userEntered, {
       headers: { "Content-Type": "application/json" },

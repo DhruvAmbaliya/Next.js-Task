@@ -28,7 +28,7 @@ const UpdateProduct = () => {
         const productData = res.data;
         setProduct(productData);
       } catch (error) {
-        console.log(error);
+        console.error(error);
       }
     };
 
@@ -53,8 +53,6 @@ const UpdateProduct = () => {
       Qty: enteredQuantity,
       Category: enteredCategory,
     };
-
-    console.log(productId);
 
     const res = await axios.put(`/api/products/${productId}`, updatedProduct, {
       headers: { "Content-Type": "application/json" },

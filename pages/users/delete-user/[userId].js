@@ -12,7 +12,7 @@ const DeleteUser = () => {
       await axios.delete(`/api/users/${userId}`);
       router.push("/users");
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   };
 

@@ -54,7 +54,6 @@ const newUser = () => {
       gender: enteredGender,
       image: enteredImage,
     };
-    //console.log(userEntered);
     const res = await axios.post("/api/users", userEntered, {
       headers: { "Content-Type": "application/json" },
     });
