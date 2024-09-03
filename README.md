@@ -9,6 +9,7 @@ First, run the development server:
 2. npm i
 3. npm run dev
 ```
+video link : https://www.awesomescreenshot.com/video/31125321?key=5c71f5449df8e85d38afa8eb5c8d7283
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
